@@ -1,0 +1,25 @@
+<html>
+<head>
+
+</head>
+<style>
+.boxed{
+    border: 1px solid green;
+    margin: 5rem 25rem;
+    text-align: center;
+    
+}
+</style>
+<title>New Page</title>
+<body>
+<div class="boxed">
+<h1> {{ user_quote }}</h1> <br>
+<h2>--{{ user_name }}</h2>
+</div>
+{{ keywords }}
+<br>
+{% for img in all %}
+<img src="{{ img }}" alt="IMAGE NOT LOADED">
+{% endfor %}
+</body>
+</html>

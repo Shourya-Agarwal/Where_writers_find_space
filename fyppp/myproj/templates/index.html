@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Where Writers find Space.</h1><br>
+     <h1>{{name}}</h1>
+     
+    <form method="POST" action="newpage">
+      {% csrf_token %}
+      <input type="text" name="text_name" placeholder="Enter your username"> <br>
+       <textarea name="text_quote"  cols="55" rows="20" ></textarea><br>
+        <input type="submit"/>
+      </form>
+  </body>
+</html>
